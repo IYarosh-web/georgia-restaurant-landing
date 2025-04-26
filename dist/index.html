@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Old Tbilisi - Authentic Georgian Restaurant</title>
+  <title data-i18n="meta.title">Old Tbilisi - Authentic Georgian Restaurant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" crossorigin href="/assets/index-DIuM5KrH.css">
+  <script type="module" crossorigin src="/assets/index-DXW6DNfu.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C3RF_eal.css">
 </head>
 <body>
   <!-- Header -->
@@ -18,16 +19,16 @@
         <div class="logo">
           <a href="#home">
             <h1>Old Tbilisi</h1>
-            <p>Georgian Restaurant</p>
+            <p data-i18n="header.subtitle">Georgian Restaurant</p>
           </a>
         </div>
         <nav class="nav-desktop">
           <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact" class="btn btn-primary">Reservations</a></li>
+            <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="#contact" class="btn btn-primary" data-i18n="nav.reservations">Reservations</a></li>
           </ul>
         </nav>
         <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -39,12 +40,12 @@
     </div>
     <nav class="nav-mobile">
       <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact" class="btn btn-primary">Make a Reservation</a></li>
+        <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary" data-i18n="nav.reservations">Make a Reservation</a></li>
       </ul>
     </nav>
   </header>
@@ -52,11 +53,11 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1 class="fade-in">Experience Authentic Georgian Cuisine</h1>
-      <p class="fade-in">A culinary journey through the rich flavors of Georgia</p>
+      <h1 class="fade-in" data-i18n="hero.title">Experience Authentic Georgian Cuisine</h1>
+      <p class="fade-in" data-i18n="hero.subtitle">A culinary journey through the rich flavors of Georgia</p>
       <div class="hero-buttons fade-in">
-        <a href="#menu" class="btn btn-primary">View Our Menu</a>
-        <a href="#contact" class="btn btn-secondary">Make a Reservation</a>
+        <a href="#menu" class="btn btn-primary" data-i18n="hero.viewMenu">View Our Menu</a>
+        <a href="#contact" class="btn btn-secondary" data-i18n="hero.makeReservation">Make a Reservation</a>
       </div>
     </div>
   </section>
@@ -64,30 +65,30 @@
   <!-- Menu Section -->
   <section class="menu-section" id="menu">
     <div class="container">
-      <h2 class="section-title">Our Menu</h2>
-      <p class="section-subtitle">Discover the rich flavors of Georgian cuisine</p>
+      <h2 class="section-title" data-i18n="menu.title">Our Menu</h2>
+      <p class="section-subtitle" data-i18n="menu.subtitle">Discover the rich flavors of Georgian cuisine</p>
       
       <!-- Menu Navigation -->
       <div class="menu-nav">
         <ul>
-          <li><a href="#starters">Starters</a></li>
-          <li><a href="#breads">Georgian Breads</a></li>
-          <li><a href="#main-courses">Main Courses</a></li>
-          <li><a href="#desserts">Desserts</a></li>
-          <li><a href="#wines">Georgian Wines</a></li>
+          <li><a href="#starters" data-i18n="menu.categories.starters">Starters</a></li>
+          <li><a href="#breads" data-i18n="menu.categories.breads">Georgian Breads</a></li>
+          <li><a href="#main-courses" data-i18n="menu.categories.mains">Main Courses</a></li>
+          <li><a href="#desserts" data-i18n="menu.categories.desserts">Desserts</a></li>
+          <li><a href="#wines" data-i18n="menu.categories.wines">Georgian Wines</a></li>
         </ul>
       </div>
 
       <!-- Starters -->
       <div id="starters">
-        <h3 class="menu-category">Starters</h3>
+        <h3 class="menu-category" data-i18n="menu.categories.starters">Starters</h3>
         <div class="menu-items">
           <div class="menu-item fade-in">
             <div class="menu-item-header">
               <h4>Pkhali</h4>
               <span class="price">€8.50</span>
             </div>
-            <p class="description">Traditional vegetable pâté with walnuts and herbs, served with Georgian bread</p>
+            <p class="description" data-i18n="menu.items.pkhali.description">Traditional vegetable pâté with walnuts and herbs, served with Georgian bread</p>
             <div class="tags">
               <span class="tag">Vegetarian</span>
             </div>
@@ -98,7 +99,7 @@
               <h4>Badrijani Nigvzit</h4>
               <span class="price">€9.90</span>
             </div>
-            <p class="description">Eggplant rolls filled with walnut and garlic paste</p>
+            <p class="description" data-i18n="menu.items.badrijani.description">Eggplant rolls filled with walnut and garlic paste</p>
             <div class="tags">
               <span class="tag">Vegetarian</span>
             </div>
@@ -108,14 +109,14 @@
 
       <!-- Georgian Breads -->
       <div id="breads">
-        <h3 class="menu-category">Georgian Breads</h3>
+        <h3 class="menu-category" data-i18n="menu.categories.breads">Georgian Breads</h3>
         <div class="menu-items">
           <div class="menu-item fade-in">
             <div class="menu-item-header">
               <h4>Imeruli Khachapuri</h4>
               <span class="price">€12.50</span>
             </div>
-            <p class="description">Traditional Georgian cheese-filled bread from Imereti region</p>
+            <p class="description" data-i18n="menu.items.imeruli.description">Traditional Georgian cheese-filled bread from Imereti region</p>
             <div class="tags">
               <span class="tag">Signature</span>
               <span class="tag">Vegetarian</span>
@@ -127,7 +128,7 @@
               <h4>Adjaruli Khachapuri</h4>
               <span class="price">€14.90</span>
             </div>
-            <p class="description">Boat-shaped bread filled with cheese and topped with an egg and butter</p>
+            <p class="description" data-i18n="menu.items.adjaruli.description">Boat-shaped bread filled with cheese and topped with an egg and butter</p>
             <div class="tags">
               <span class="tag">Chef's Special</span>
               <span class="tag">Vegetarian</span>
@@ -138,14 +139,14 @@
 
       <!-- Main Courses -->
       <div id="main-courses">
-        <h3 class="menu-category">Main Courses</h3>
+        <h3 class="menu-category" data-i18n="menu.categories.mains">Main Courses</h3>
         <div class="menu-items">
           <div class="menu-item fade-in">
             <div class="menu-item-header">
               <h4>Khinkali (5 pcs)</h4>
               <span class="price">€14.90</span>
             </div>
-            <p class="description">Georgian soup dumplings with beef and pork filling, seasoned with herbs and spices</p>
+            <p class="description" data-i18n="menu.items.khinkali.description">Georgian soup dumplings with beef and pork filling, seasoned with herbs and spices</p>
           </div>
           
           <div class="menu-item fade-in">
@@ -153,68 +154,9 @@
               <h4>Mtsvadi</h4>
               <span class="price">€18.50</span>
             </div>
-            <p class="description">Grilled pork skewers marinated in Georgian spices, served with tkemali sauce</p>
+            <p class="description" data-i18n="menu.items.mtsvadi.description">Grilled pork skewers marinated in Georgian spices, served with tkemali sauce</p>
             <div class="tags">
               <span class="tag">Chef's Special</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desserts -->
-      <div id="desserts">
-        <h3 class="menu-category">Desserts</h3>
-        <div class="menu-items">
-          <div class="menu-item fade-in">
-            <div class="menu-item-header">
-              <h4>Pelamushi</h4>
-              <span class="price">€7.90</span>
-            </div>
-            <p class="description">Traditional Georgian grape pudding with walnuts</p>
-            <div class="tags">
-              <span class="tag">Vegetarian</span>
-            </div>
-          </div>
-          
-          <div class="menu-item fade-in">
-            <div class="menu-item-header">
-              <h4>Churchkhela</h4>
-              <span class="price">€6.50</span>
-            </div>
-            <p class="description">Traditional Georgian candy made with grape juice and nuts</p>
-            <div class="tags">
-              <span class="tag">Vegetarian</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Georgian Wines -->
-      <div id="wines">
-        <h3 class="menu-category">Georgian Wines</h3>
-        <p class="section-subtitle">Georgia is one of the oldest wine regions in the world, with a tradition of 8,000 years</p>
-        <div class="menu-items wine-list">
-          <div class="menu-item fade-in">
-            <div class="menu-item-header">
-              <h4>Saperavi</h4>
-              <span class="price">€7.50 / €36</span>
-            </div>
-            <p class="description">Dry red wine with notes of black fruits and spices</p>
-            <div class="tags">
-              <span class="tag">Red</span>
-              <span class="tag">Dry</span>
-            </div>
-          </div>
-          
-          <div class="menu-item fade-in">
-            <div class="menu-item-header">
-              <h4>Rkatsiteli</h4>
-              <span class="price">€6.90 / €34</span>
-            </div>
-            <p class="description">Amber wine with floral and fruity notes, aged in traditional qvevri</p>
-            <div class="tags">
-              <span class="tag">White</span>
-              <span class="tag">Dry</span>
             </div>
           </div>
         </div>
@@ -230,12 +172,12 @@
           <img src="https://images.pexels.com/photos/2218618/pexels-photo-2218618.jpeg" alt="Old Tbilisi Restaurant">
         </div>
         <div class="about-content fade-in">
-          <h2 class="section-title">Our Story</h2>
-          <p>Welcome to Old Tbilisi, where we bring the heart and soul of Georgian cuisine to Brussels. Our restaurant is named after Georgia's capital city, known for its rich history and culinary traditions.</p>
-          <p>Our family recipes have been passed down through generations, and we take pride in offering authentic Georgian flavors using the freshest ingredients and traditional cooking methods.</p>
-          <p>From the famous cheese-filled Khachapuri to tender Mtsvadi and delightful Khinkali dumplings, every dish tells a story of Georgia's diverse culinary heritage.</p>
+          <h2 class="section-title" data-i18n="about.title">Our Story</h2>
+          <p data-i18n="about.content1">Welcome to Old Tbilisi, where we bring the heart and soul of Georgian cuisine to Brussels. Our restaurant is named after Georgia's capital city, known for its rich history and culinary traditions.</p>
+          <p data-i18n="about.content2">Our family recipes have been passed down through generations, and we take pride in offering authentic Georgian flavors using the freshest ingredients and traditional cooking methods.</p>
+          <p data-i18n="about.content3">From the famous cheese-filled Khachapuri to tender Mtsvadi and delightful Khinkali dumplings, every dish tells a story of Georgia's diverse culinary heritage.</p>
           <div class="signature">
-            <p>Chef Giorgi Kvinikadze</p>
+            <p data-i18n="about.signature">Chef Giorgi Kvinikadze</p>
           </div>
         </div>
       </div>
@@ -245,12 +187,12 @@
   <!-- Testimonials Section -->
   <section class="testimonials">
     <div class="container">
-      <h2 class="section-title">What Our Guests Say</h2>
+      <h2 class="section-title" data-i18n="testimonials.title">What Our Guests Say</h2>
       
       <div class="testimonial-container">
         <div class="testimonial fade-in">
           <div class="testimonial-text">
-            <p>"The Khachapuri here is absolutely divine! The authentic Georgian flavors transported me straight to Tbilisi. A hidden gem in Brussels!"</p>
+            <p data-i18n="testimonials.review1">"The Khachapuri here is absolutely divine! The authentic Georgian flavors transported me straight to Tbilisi. A hidden gem in Brussels!"</p>
           </div>
           <div class="testimonial-author">
             <p><strong>Sophie Dumont</strong></p>
@@ -266,7 +208,7 @@
         
         <div class="testimonial fade-in">
           <div class="testimonial-text">
-            <p>"Incredible food and warm atmosphere. The wine selection is impressive, and the staff made excellent recommendations to pair with our meal."</p>
+            <p data-i18n="testimonials.review2">"Incredible food and warm atmosphere. The wine selection is impressive, and the staff made excellent recommendations to pair with our meal."</p>
           </div>
           <div class="testimonial-author">
             <p><strong>Jan Vandenberg</strong></p>
@@ -282,7 +224,7 @@
         
         <div class="testimonial fade-in">
           <div class="testimonial-text">
-            <p>"A culinary journey I'll never forget. The Khinkali dumplings were perfect, and the hospitality made us feel like family. Will definitely return!"</p>
+            <p data-i18n="testimonials.review3">"A culinary journey I'll never forget. The Khinkali dumplings were perfect, and the hospitality made us feel like family. Will definitely return!"</p>
           </div>
           <div class="testimonial-author">
             <p><strong>Marie Lefèvre</strong></p>
@@ -302,8 +244,8 @@
   <!-- Gallery Section -->
   <section class="gallery" id="gallery">
     <div class="container">
-      <h2 class="section-title">Gallery</h2>
-      <p class="section-subtitle">A glimpse into our restaurant and cuisine</p>
+      <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
+      <p class="section-subtitle" data-i18n="gallery.subtitle">A glimpse into our restaurant and cuisine</p>
       
       <div class="gallery-grid">
         <div class="gallery-item fade-in">
@@ -331,14 +273,14 @@
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Visit Us</h2>
+      <h2 class="section-title" data-i18n="contact.title">Visit Us</h2>
       
       <div class="contact-grid">
         <div class="contact-info fade-in">
           <div class="info-item">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
-              <h3>Address</h3>
+              <h3 data-i18n="contact.address">Address</h3>
               <p>123 Rue de Bruxelles, 1000 Brussels, Belgium</p>
             </div>
           </div>
@@ -346,16 +288,16 @@
           <div class="info-item">
             <div class="icon"><i class="fas fa-clock"></i></div>
             <div>
-              <h3>Opening Hours</h3>
-              <p>Tuesday - Sunday: 12:00 - 22:00</p>
-              <p>Monday: Closed</p>
+              <h3 data-i18n="contact.openingHours">Opening Hours</h3>
+              <p data-i18n="contact.schedule.weekdays">Tuesday - Sunday: 12:00 - 22:00</p>
+              <p data-i18n="contact.schedule.monday">Monday: Closed</p>
             </div>
           </div>
           
           <div class="info-item">
             <div class="icon"><i class="fas fa-phone"></i></div>
             <div>
-              <h3>Reservations</h3>
+              <h3 data-i18n="contact.reservations">Reservations</h3>
               <p>+32 2 123 45 67</p>
               <p>info@oldtbilisiresto.be</p>
             </div>
@@ -367,37 +309,37 @@
         </div>
         
         <div class="reservation-form fade-in">
-          <h3>Make a Reservation</h3>
+          <h3 data-i18n="contact.form.title">Make a Reservation</h3>
           <form>
             <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" required>
+              <label for="name" data-i18n="contact.form.name">Full Name</label>
+              <input type="text" id="name" name="name" required data-i18n-placeholder="contact.form.name">
             </div>
             
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <label for="email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="email" name="email" required data-i18n-placeholder="contact.form.email">
             </div>
             
             <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required>
+              <label for="phone" data-i18n="contact.form.phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required data-i18n-placeholder="contact.form.phone">
             </div>
             
             <div class="form-row">
               <div class="form-group">
-                <label for="date">Date</label>
+                <label for="date" data-i18n="contact.form.date">Date</label>
                 <input type="date" id="date" name="date" required>
               </div>
               
               <div class="form-group">
-                <label for="time">Time</label>
+                <label for="time" data-i18n="contact.form.time">Time</label>
                 <input type="time" id="time" name="time" required>
               </div>
             </div>
             
             <div class="form-group">
-              <label for="guests">Number of Guests</label>
+              <label for="guests" data-i18n="contact.form.guests">Number of Guests</label>
               <select id="guests" name="guests" required>
                 <option value="1">1 person</option>
                 <option value="2">2 people</option>
@@ -410,11 +352,11 @@
             </div>
             
             <div class="form-group">
-              <label for="message">Special Requests</label>
-              <textarea id="message" name="message" rows="3"></textarea>
+              <label for="message" data-i18n="contact.form.requests">Special Requests</label>
+              <textarea id="message" name="message" rows="3" data-i18n-placeholder="contact.form.requests"></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary">Reserve Now</button>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Reserve Now</button>
           </form>
         </div>
       </div>
@@ -431,18 +373,18 @@
         </div>
         
         <div class="footer-links">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footer.quickLinks">Quick Links</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
         
         <div class="footer-social">
-          <h3>Follow Us</h3>
+          <h3 data-i18n="footer.followUs">Follow Us</h3>
           <div class="social-icons">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -452,11 +394,10 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2025 Old Tbilisi Restaurant. All rights reserved.</p>
+        <p>&copy; <span id="year">2025</span> Old Tbilisi Restaurant. <span data-i18n="footer.rights">All rights reserved.</span></p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

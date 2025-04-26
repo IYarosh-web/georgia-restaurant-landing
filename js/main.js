@@ -1,4 +1,5 @@
 // Main JavaScript File
+import './i18n.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
@@ -128,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       // In a real implementation, you would send the form data to your server
       // For demonstration purposes, we'll just display a success message
-      alert('Thank you for your reservation request! We will contact you shortly to confirm.');
+      alert(i18n.translate('contact.form.success'));
       this.reset();
     });
   }
