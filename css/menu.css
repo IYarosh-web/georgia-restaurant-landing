@@ -1,0 +1,223 @@
+/* Menu Page Specific Styles */
+
+/* Menu Hero Section */
+.menu-hero {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light);
+  margin-bottom: 0;
+  padding-top: 80px;
+}
+
+.menu-hero-content {
+  max-width: 800px;
+  padding: 0 var(--spacing-md);
+}
+
+.menu-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.menu-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Navigation */
+.menu-nav {
+  background-color: var(--dark);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 70px;
+  z-index: 90;
+  box-shadow: var(--shadow-md);
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  color: var(--light);
+  font-weight: 600;
+  padding: var(--spacing-xs) 0;
+  position: relative;
+}
+
+.menu-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width var(--transition-normal);
+}
+
+.menu-nav a:hover::after {
+  width: 100%;
+}
+
+/* Menu Sections */
+.menu-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.menu-section:nth-child(odd) {
+  background-color: var(--light);
+}
+
+.menu-section:nth-child(even) {
+  background-color: var(--light-80);
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.menu-item {
+  background-color: var(--light);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+  border-bottom: 1px dashed var(--light-60);
+  padding-bottom: var(--spacing-xs);
+}
+
+.menu-item-header h3 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.description {
+  color: var(--dark-60);
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tags {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: var(--light-80);
+  color: var(--dark-60);
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag:nth-child(1) {
+  background-color: var(--primary-light);
+  color: var(--light);
+}
+
+/* Wine List */
+.wine-list .menu-item-header {
+  border-bottom-width: 2px;
+}
+
+/* CTA Section */
+.cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.pexels.com/photos/5865369/pexels-photo-5865369.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  text-align: center;
+  padding: var(--spacing-xxl) 0;
+}
+
+.cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .menu-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-hero {
+    height: 40vh;
+  }
+  
+  .menu-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .menu-nav {
+    overflow-x: auto;
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .menu-nav ul {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-hero {
+    height: 30vh;
+  }
+  
+  .menu-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+  }
+  
+  .cta p {
+    font-size: 1rem;
+  }
+}
